@@ -7,5 +7,8 @@
 build:
 	cargo build
 
+build-arch:
+	cargo build
+
 %:
 	dh $@ 
