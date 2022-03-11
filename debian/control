@@ -2,7 +2,7 @@ Source: jless
 Section: utils
 Priority: optional
 Maintainer: Gea-Suan Lin (PPA) <gslin@gslin.org>
-Build-Depends: cargo, debhelper (>= 9.0.0), dh-cargo, libpython3-stdlib, libxcb1-dev, libxcb-render0-dev, libxcb-shape0-dev, libxcb-xfixes0-dev, python3-minimal
+Build-Depends: cargo, debhelper (>= 9.0.0), libpython3-stdlib, libxcb1-dev, libxcb-render0-dev, libxcb-shape0-dev, libxcb-xfixes0-dev, python3-minimal
 Standards-Version: 3.9.7
 Homepage: https://jless.io/
 Vcs-Git: https://github.com/PaulJuliusMartinez/jless.git

@@ -1,3 +1,9 @@
+jless (0.8.0.20220311.7.43a7380-unstable~ppa1) unstable; urgency=medium
+
+  * Packaging 0.8.0.20220311.7.43a7380.
+
+ -- Gea-Suan Lin (PPA) <gslin@gslin.org>  Fri, 11 Mar 2022 09:15:52 +0800
+
 jless (0.8.0.20220311.6.43a7380-unstable~ppa1) unstable; urgency=medium
 
   * Packaging 0.8.0.20220311.6.43a7380.
