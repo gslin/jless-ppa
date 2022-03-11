@@ -2,7 +2,7 @@ Source: jless
 Section: utils
 Priority: optional
 Maintainer: Gea-Suan Lin (PPA) <gslin@gslin.org>
-Build-Depends: cargo, debhelper (>= 9.0.0), dh-cargo
+Build-Depends: cargo, debhelper (>= 9.0.0), dh-cargo, libpython3-stdlib, libxcb1-dev, libxcb-render0-dev, libxcb-shape0-dev, libxcb-xfixes0-dev, python3-minimal
 Standards-Version: 3.9.7
 Homepage: https://jless.io/
 Vcs-Git: https://github.com/PaulJuliusMartinez/jless.git
@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/PaulJuliusMartinez/jless
 
 Package: jless
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libxcb1, libxcb-render0, libxcb-shape0, libxcb-xfixes0
 Description: jless is a command-line JSON viewer. Use it as a
  replacement for whatever combination of less, jq, cat and your editor
  you currently use for viewing JSON files. It is written in Rust and

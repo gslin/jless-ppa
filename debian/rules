@@ -4,11 +4,17 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-build:
-	cargo build
-
-build-arch:
-	cargo build
-
 %:
 	dh $@ 
+
+execute_before_dh_auto_build:
+	test $(shell lsb_release -c -s) = xenial && update-alternatives --install /usr/bin/python python /usr/bin/python3 10 || true
+
+execute_before_dh_auto_build_arch:
+	test $(shell lsb_release -c -s) = xenial && update-alternatives --install /usr/bin/python python /usr/bin/python3 10 || true
+
+override_dh_auto_build:
+	cargo build
+
+override_dh_auto_build-arch:
+	cargo build
